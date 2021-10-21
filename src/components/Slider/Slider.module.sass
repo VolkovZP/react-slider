@@ -1,0 +1,26 @@
+.container
+    margin: 100px auto 0
+    position: relative
+    max-width: 800px
+    height: 40vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.leftarrow
+    @extend %arrow
+    left: 0
+
+.rightarrow
+    @extend %arrow
+    right: 0
+
+%arrow
+    position: absolute
+    top: 40%
+    font-size: 3rem
+    color: #029790
+    z-index: 10
+    cursor: pointer
+    user-select: none
+    transform: translateY(100%)
